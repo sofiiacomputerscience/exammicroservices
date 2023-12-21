@@ -39,6 +39,8 @@ Services are granular, owning their unique business logic and data models, which
 
 • Q4: Briefly explain the CAP theorem and its relevance to distributed systems and Microservices.
 The CAP theorem stands for the fact that in computer architecture any distrubuted system can provide only two of three CAP guarantees(consistency, availability, partition tolerance). 
+In the microservice architecture developers usually choose availability and partition tolerance, accepting eventual consistency over immediate consistency to ensure the system remains operational and responsive. It happens because the greater levels of consistency is coming with delays which are possible in some systems, but in some not. The importance on the required feature highly depends on the domain(the social network and medical system may use different features of CAP theorem). Thats why it is importnat to considers what to choose from consistency, availability, partition tolerance depending on field of application.
+
 
 • Q5: What consequences on the architecture ?
 The main consequence of the microservice architecture is for sure it's complexity and sometimes hard management due to the distributed system. It can introduce challenges in maintaining data consistency and transaction management across services. However, the main pros is the independence. The microservice architecture enhances scalability and resilience, as services can be scaled independently, and failures in one service have minimal impact on others. 
